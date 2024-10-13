@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Places - Explorer's Guide</title>
+    <link rel="stylesheet" href="styles6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script6.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Places</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="weather.html">Current Weather</a></li>
+                <li><a href="forecast.html">5-Day Forecast</a></li>
+                <li><a href="expense-tracker.html">Expense Tracker</a></li>
+                <li><a href="trip-planning.html">Trip Planning</a></li>
+                <li><a href="blogging.html">Blogging</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="locationInput" placeholder="Enter a city">
+        <div id="suggestionsContainer" class="suggestions-container"></div> <!-- Container for autocomplete suggestions -->
+        <button id="searchButton">Search</button>
+        <button id="nearbyButton">Find Nearby Places</button>
+        <button id="trackButton">Track My Location</button>
+    </div>
+
+    <div id="mapContainer" style="height: 500px; width: 100%;"></div>
+
+    <div id="results">
+        <div id="directionsContainer"></div>
+        <div id="placesContainer"></div>
+    </div>
+</body>
+
+</html>

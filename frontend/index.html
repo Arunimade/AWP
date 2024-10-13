@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Explorer's Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🌍 Explorer's Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="search.html">🔍 Search City</a></li>
+                <li><a href="weather.html">🌦️ Current Weather</a></li>
+                <li><a href="forecast.html">📅 5-Day Forecast</a></li>
+                <li><a href="expense-tracker.html">💵 Expense Tracker</a></li>
+                <li><a href="trip-planning.html">✈️ Trip Planning</a></li>
+                <li><a href="blogging.html">✍️ Blogging</a></li>
+            </ul>
+        </nav>
+        <button id="login-button"><a href="Login.html">🔑 Log In</a></button>
+        <button id="registration-button"><a href="reg.html">📝 Register</a></button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1><span class="highlight">🌟 EXPLORER'S GUIDE</span> IS HERE TO <br> ENHANCE YOUR <span class="highlight">ADVENTURE</span></h1>
+            <p>Your ultimate companion for planning, tracking, and enjoying every moment of your journey.</p>
+            <a href="search.html" class="cta-button">🌍 Start Your Adventure</a>
+        </section>
+        
+        <div class="cards">
+            <div class="card">
+                <h2>🌦️ Current Weather</h2>
+                <div style="padding: 20px;" id="ww_358f114296ce0" v='1.3' loc='auto' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl4033"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#1976D2","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+                    <a href="https://weatherwidget.org/" id="ww_358f114296ce0_u" target="_blank">Weather widgets for websites</a>
+                </div>
+                <script async src="https://app2.weatherwidget.org/js/?id=ww_358f114296ce0"></script>
+            </div>
+            <div class="card">
+                <h2>☀️ 5-Day Forecast</h2>
+                <div id="forecast-display"></div>
+            </div>
+            <div class="card">
+                <h2>💰 Expense Tracker</h2>
+                <div id="expense-tracker-container">
+                    <!-- Expense Tracker Form and Display -->
+                </div>
+            </div>
+            <div class="card">
+                <h2>✈️ Trip Planning</h2>
+                <div id="trip-planning-container" style="background-image: url('https://www.bing.com/images/create/anime-style-image-of-trip-planning/1-66ed0398d4454183872ecd27d1c0863d?id=TqN29MRWWKXXgeYLiWWJJg%3d%3d&view=detailv2&idpp=genimg&thId=OIG2.vhskZD3uHRX81FmDKpUa&skey=W9cWcRkjWFEKPxz5Nin-ip5uHzZRqhiTB_r8WVh3oYc&FORM=GCRIDP&mode=overlay');">
+                    <!-- Note-keeping and Trip Planning Tools -->
+                </div>
+            </div>
+            <div class="card">
+                <h2>🧳 Blogging</h2>
+                <div id="blogging-container">
+                    <!-- Blogging Tools -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explorer's Weather Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

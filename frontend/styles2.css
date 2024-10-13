@@ -1,0 +1,198 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for a clean look */
+    color: #333; /* Dark grey text for easy readability */
+}
+
+header {
+    background-color: #003366; /* Dark blue for header background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004080; /* Lighter blue on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #e0f0f9; /* Soft, calm background */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #003366;
+    font-weight: bold;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+.tab-button {
+    background-color: #004080; /* Dark blue buttons */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #0059b3; /* Slightly lighter on hover */
+}
+
+.tab-button.active {
+    background-color: #00264d; /* Even darker blue for active state */
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tab-content h3 {
+    color: #003366;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto; /* Center align form */
+}
+
+.form-container input,
+.form-container select,
+.form-container button,
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container button {
+    background-color: #004080;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #0059b3;
+}
+
+/* Personal and Shared Section Styling */
+#personal-budget-section, #shared-budget-section,
+#personal-summary-section, #shared-summary-section {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#personal-budget-section h3, #shared-budget-section h3,
+#personal-summary-section h3, #shared-summary-section h3 {
+    color: #003366;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+.emoji {
+    position: absolute; /* Keep it absolute for positioning */
+    top: 90%; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    font-size: 200px; /* Adjust size as needed */
+    transform: rotate(15deg); /* Slant the emoji to the right */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.emoji:hover {
+    transform: rotate(15deg) scale(1.1); /* Slightly enlarge on hover while maintaining slant */
+}
+.aemoji {
+    position: absolute; /* Keep it absolute for positioning */
+    top: 90%; /* Adjust as needed */
+    left: 80%; /* Adjust as needed */
+    font-size: 200px; 
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
